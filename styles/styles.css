@@ -123,6 +123,15 @@ body{
     min-height: 260px;
 }
 
+
+.social-proof-card:nth-child(2){
+    margin-top: 20px;
+}
+
+.social-proof-card:nth-child(3){
+    margin-top: 40px;
+} 
+
 .card-social-image{
     width: 50px;
     height: 50px;
@@ -200,6 +209,13 @@ body{
     .social-proof-card{
         flex: 1 1 40%;
     }
+    .social-proof-card:nth-child(2){
+        margin-top: 0px;
+    }
+
+    .social-proof-card:nth-child(3){
+        margin-top: 0px;
+    } 
 }
 
 @media (max-width: 767.98px) {
