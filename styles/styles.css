@@ -237,6 +237,8 @@ body{
     .proof-social-rating{
         flex-direction: column;
         gap: 10px;
+        align-items: center;
+        text-align: center;
     }
     .proof-social-title{
         font-size: 24px;
