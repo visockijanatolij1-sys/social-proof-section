@@ -219,6 +219,11 @@ body{
 }
 
 @media (max-width: 767.98px) {
+    body {
+        background-image:
+            url("../img/bg-pattern-top-mobile.svg"),
+            url("../img/bg-pattern-bottom-mobile.svg");
+    }
     .social-proof-card{
         flex: 1 1 100%;
     }
