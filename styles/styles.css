@@ -40,7 +40,8 @@ body{
 .social-proof{
     width: 100%;
     margin: 70px 0;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .social-proof-top{
@@ -119,6 +120,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 24px;
+    min-height: 260px;
 }
 
 .card-social-image{
@@ -159,4 +161,80 @@ body{
 .card-social-content{
     color: #fff;
     font-size: 18px;
+}
+
+@media (max-width: 979px) {
+    .social-proof-top{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .proof-social-title{
+        font-size: 34px;
+        text-align: center;
+    }
+    .proof-social-subtitle{
+        margin-top: 20px;
+        text-align: center;
+    }
+    .proof-social-right{
+        gap: 10px;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .proof-social-rating{
+        padding: 10px 10px;
+
+    }
+    .proof-social-rating:nth-child(1),
+    .proof-social-rating:nth-child(2),
+    .proof-social-rating:nth-child(3){
+        margin-left: 0;
+    }
+    .social-proof-cards{
+        margin-top: 50px;
+        gap: 10px;
+        flex-wrap: wrap;
+
+    }
+    .social-proof-card{
+        flex: 1 1 40%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .social-proof-card{
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    .proof-social-top{
+        gap: 10px;
+    }
+    .proof-social-left{
+        max-width: 330px;
+    }
+    .proof-social-right{
+        max-width: 330px;
+    }
+    .proof-social-rating{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .proof-social-title{
+        font-size: 24px;
+    }
+    .proof-social-subtitle{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 425px) {
+    .proof-social-left{
+        max-width: 230px;
+    }
+    .proof-social-right{
+        max-width: 230px;
+    }
 }
